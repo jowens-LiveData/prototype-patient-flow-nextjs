@@ -1,0 +1,83 @@
+.appMenuContainer {
+  position: relative;
+}
+
+.appMenuButton {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  background-color: #f6f6f6;
+  border-color: #ddd;
+  color: #333;
+  text-shadow: 0 1px 0 #f3f3f3;
+  border-radius: 0.3125em;
+  outline: none;
+  cursor: pointer;
+  margin-left: 20px;
+
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.appMenuDropdown {
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  width: 18.75rem;
+  color: #333;
+  background-color: #f6f6f6;
+  border: 1px solid #dddbda;
+  border-radius: 0.3125em;
+  box-shadow: 0 2px 3px 0 rgb(0 0 0 / 16%);
+  z-index: 20;
+}
+
+.userinfo-logout {
+  display: flex;
+  align-items: center;
+
+  &__name-role {
+    flex: 1 0;
+    padding: 1rem 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__logout {
+    flex: 0 1;
+    width: auto;
+    height: 3rem;
+    font-size: 1rem;
+    overflow: visible;
+    background-color: #f6f6f6;
+    border-color: #ddd;
+    color: #333;
+    text-shadow: 0 1px 0 #f3f3f3;
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 0.7em 1em;
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,.15);
+    font-weight: 700;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.3125em;
+
+    &:hover {
+      background-color: #ededed;
+      border-color: #ddd;
+      color: #333;
+      text-shadow: 0 1px 0 #f3f3f3;
+    }
+  }
+}
