@@ -1,0 +1,18 @@
+.mainHeader {
+  display: flex;
+  align-items: center;
+  height: 88px;
+  // background-image: linear-gradient(#00a8cc, #006880);
+  padding: 0 10px;
+
+  h1 {
+    font-size: 72px;
+    font-weight: 400;
+    margin-right: 10px;
+  }
+
+  p {
+    color: rgba(255,255,255,0.65);
+    margin: 1rem auto 1rem 0;
+  }
+}

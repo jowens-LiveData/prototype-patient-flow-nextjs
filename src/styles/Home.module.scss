@@ -1,0 +1,19 @@
+.patientFlowEntry {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 139px;
+}
+
+.header {
+  border-color: #333;
+  padding: 0px;
+  margin: 0px;
+
+  left: 0;
+  right: 0;
+  top: -1px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  background-image: linear-gradient(#00a8cc, #006880);
+}
