@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 
-import { MainHeader, TableHeader } from '@/components';
+import { MainHeader, TableHeader, TableBody } from '@/components';
 
 import styles from '@/styles/Home.module.scss';
 
@@ -14,6 +14,7 @@ const Home: NextPage = () => {
         <MainHeader />
         <TableHeader />
       </div>
+      <TableBody />
     </div>
   );
 };
