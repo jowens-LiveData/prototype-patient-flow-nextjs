@@ -5,7 +5,7 @@ import styles from "./TableRow.module.scss";
 import tableHeaderStyles from "../TableHeader/TableHeader.module.scss";
 import CheckBoxButton from "./CheckBoxButton";
 
-const TableRow = () => {
+const TableRow = ({ rowData }) => {
   const [selected, setSelected] = useState({});
 
   const toggleSelected = (type) => {
@@ -21,7 +21,7 @@ const TableRow = () => {
           tableHeaderStyles.labelBold,
         )}
       >
-        C, T
+        {rowData.patientName}
       </div>
 
       <div
@@ -31,7 +31,7 @@ const TableRow = () => {
           tableHeaderStyles.labelBold,
         )}
       >
-        10348
+        {rowData.caseId}
       </div>
 
       <CheckBoxButton
